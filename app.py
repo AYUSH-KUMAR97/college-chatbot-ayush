@@ -7,15 +7,15 @@ import nltk
 from flask import Flask, render_template, request
 from nltk.stem import LancasterStemmer
 
-# --- 1. CLOUD NLTK & SERVER SETUP ---
-# Yeh part Render server par NLTK data download karne ke liye hai
+# Create a clear path
 nltk_data_path = os.path.join(os.getcwd(), 'nltk_data')
 if not os.path.exists(nltk_data_path):
     os.makedirs(nltk_data_path)
 nltk.data.path.append(nltk_data_path)
 
-nltk.download('punkt', download_dir=nltk_data_path)
-nltk.download('punkt_tab', download_dir=nltk_data_path)
+# Download everything needed for tokenization
+nltk.download('punkt', download_dir=nltk_data_path, quiet=True)
+nltk.download('punkt_tab', download_dir=nltk_data_path, quiet=True)
 
 app = Flask(__name__)
 stemmer = LancasterStemmer()
