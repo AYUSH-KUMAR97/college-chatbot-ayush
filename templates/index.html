@@ -1,1 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Help Chatbot | TEAM GAINERS </title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
 
+    <div class="chat-container">
+        <div class="chat-header">
+            <h2>🤖 College Assistant</h2>
+            <p style="color: #0078ff; font-weight: bold; margin-top: 5px;">Code Flow with Ayush</p>
+        </div>
+
+        <div id="chatbox">
+            <p class="botText"><span>Hi! I'm your college guide. How can I help you today?</span></p>
+        </div>
+
+        <div id="userInput">
+            <input id="textInput" type="text" name="msg" placeholder="Ask me about fees, admission..." autocomplete="off">
+            <button id="buttonInput" type="submit">Send</button>
+        </div>
+
+        <div style="text-align: center; padding-bottom: 10px; color: #666; font-size: 10px;">
+            Developed by Ayush | Subscribe to Code Flow
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
