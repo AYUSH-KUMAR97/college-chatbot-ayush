@@ -17,7 +17,7 @@ nltk.data.path.append(nltk_data_path)
 nltk.download('punkt', download_dir=nltk_data_path, quiet=True)
 nltk.download('punkt_tab', download_dir=nltk_data_path, quiet=True)
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static', template_folder='templates')
 stemmer = LancasterStemmer()
 
 # --- 2. LOAD THE AI BRAIN ---
