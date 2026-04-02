@@ -1,0 +1,42 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hello", "Hey", "Is anyone there?", "Namaste"],
+      "responses": ["Hello! I am your College Assistant. How can I help you?", "Hi there! Need help with college info?"]
+    },
+    {
+      "tag": "admission",
+      "patterns": ["How to join?", "Admission process", "How can I take admission?", "Eligibility criteria"],
+      "responses": ["You can apply through the official portal. You'll need your 12th marksheet and entrance exam score."]
+    },
+    {
+      "tag": "fees",
+      "patterns": ["What is the fee?", "How much for B.Tech?", "Semester fees", "Hostel charges"],
+      "responses": ["The fee varies by course. Generally, it's between 80k to 1.2L per year. Check the brochure for exact details."]
+    },
+    {
+      "tag": "placement",
+      "patterns": ["Placement record", "Which companies come?", "Average package", "Jobs"],
+      "responses": ["We have great placements! Companies like TCS, Wipro, and Infosys visit regularly. Average package is 5-6 LPA."]
+    },
+    {
+      "tag": "creator",
+      "patterns": [
+        "Who made you?", 
+        "Who is the developer?", 
+        "Tell me about your creator",
+        "Code Flow with Ayush"
+      ],
+      "responses": [
+        "I was developed by Ayush! Check out his work on the 'Code Flow with Ayush' YouTube channel.",
+        "My creator is Ayush. He runs the Code Flow community to help students like you!"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye", "Thanks for help"],
+      "responses": ["Glad I could help! Have a great day.", "Goodbye! Visit again if you have more questions."]
+    }
+  ]
+}
